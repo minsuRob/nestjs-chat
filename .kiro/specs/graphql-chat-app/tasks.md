@@ -17,7 +17,7 @@
   - 초기 마이그레이션 생성 및 실행
   - _Requirements: 6.4, 2.2_
 
-- [ ] 3. Backend - Redis 설정 및 PubSub 구현
+- [x] 3. Backend - Redis 설정 및 PubSub 구현
 
   - RedisService 구현 (ioredis 클라이언트)
   - RedisModule 구현
