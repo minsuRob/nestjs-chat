@@ -121,7 +121,7 @@
   - 현재 사용자 메시지 구분 표시
   - _Requirements: 3.2, 3.3, 4.1, 4.2, 4.3, 5.2, 5.3, 5.4, 5.5_
 
-- [ ] 15. Frontend - MessageInput 컴포넌트 구현
+- [x] 15. Frontend - MessageInput 컴포넌트 구현
 
   - 메시지 입력 폼 UI (하단 고정)
   - sendMessage mutation 호출
