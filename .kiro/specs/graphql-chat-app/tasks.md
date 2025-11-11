@@ -111,7 +111,7 @@
   - 에러 처리 및 표시
   - _Requirements: 1.1, 1.2, 7.4_
 
-- [ ] 14. Frontend - MessageList 컴포넌트 구현
+- [x] 14. Frontend - MessageList 컴포넌트 구현
 
   - 메시지 목록 UI (스크롤 가능 영역)
   - messages query로 초기 메시지 로드
