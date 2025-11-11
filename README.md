@@ -32,9 +32,17 @@ docker-compose up -d
 
 ```bash
 cd backend
+
+# 의존성 설치 (이미 완료된 경우 생략)
 npm install
+
+# Prisma Client 생성
 npx prisma generate
-npx prisma migrate dev
+
+# 데이터베이스 마이그레이션 (Docker가 실행 중이어야 함)
+npx prisma migrate dev --name init
+
+# 개발 서버 실행
 npm run start:dev
 ```
 
@@ -45,11 +53,22 @@ GraphQL Playground: http://localhost:4000/graphql
 
 ```bash
 cd frontend
+
+# 의존성 설치 (이미 완료된 경우 생략)
 npm install
+
+# 개발 서버 실행
 npm run dev
 ```
 
 Frontend는 http://localhost:3000 에서 실행됩니다.
+
+## 사용 방법
+
+1. Frontend (http://localhost:3000)에 접속
+2. 닉네임을 입력하여 채팅에 참여
+3. 메시지를 입력하고 전송
+4. 다른 브라우저 탭에서도 접속하여 실시간 채팅 테스트
 
 ## 프로젝트 구조
 
