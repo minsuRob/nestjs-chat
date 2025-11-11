@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { PrismaModule } from './prisma/prisma.module';
 import { RedisModule } from './redis/redis.module';
 import { UserModule } from './user/user.module';
+import { ChatModule } from './chat/chat.module';
 import { join } from 'path';
 
 @Module({
@@ -23,6 +24,7 @@ import { join } from 'path';
     PrismaModule,
     RedisModule,
     UserModule,
+    ChatModule,
   ],
   controllers: [AppController],
   providers: [AppService],

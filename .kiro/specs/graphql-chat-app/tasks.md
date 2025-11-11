@@ -43,7 +43,7 @@
   - Redis에 활성 사용자 저장 및 세션 관리
   - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5_
 
-- [ ] 6. Backend - Chat 모듈 기본 구조 구현
+- [x] 6. Backend - Chat 모듈 기본 구조 구현
 
   - ChatModule, ChatResolver, ChatService 생성
   - SendMessageInput DTO 작성 (메시지 검증 1-500자)
