@@ -94,7 +94,7 @@
   - ApolloProvider로 앱 래핑
   - _Requirements: 3.1, 6.1, 6.2, 6.3_
 
-- [ ] 12. Frontend - GraphQL 쿼리/뮤테이션/구독 정의
+- [x] 12. Frontend - GraphQL 쿼리/뮤테이션/구독 정의
 
   - messages query 정의
   - createGuest mutation 정의
