@@ -25,7 +25,7 @@
   - Redis 연결 에러 핸들링 및 재연결 로직
   - _Requirements: 6.5, 7.2_
 
-- [ ] 4. Backend - GraphQL 서버 설정
+- [x] 4. Backend - GraphQL 서버 설정
 
   - AppModule에 GraphQL 모듈 설정
   - Apollo Server 설정 (HTTP 및 WebSocket)
