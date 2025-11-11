@@ -130,7 +130,7 @@
   - 에러 처리 및 표시
   - _Requirements: 2.1, 5.1, 7.4_
 
-- [ ] 16. Frontend - ChatRoom 컴포넌트 통합
+- [x] 16. Frontend - ChatRoom 컴포넌트 통합
 
   - 전체 채팅 레이아웃 구성
   - MessageList와 MessageInput 조합
