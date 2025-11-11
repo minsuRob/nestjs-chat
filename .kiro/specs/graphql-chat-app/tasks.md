@@ -1,6 +1,6 @@
 # Implementation Plan
 
-- [ ] 1. 프로젝트 초기 설정 및 의존성 설치
+- [x] 1. 프로젝트 초기 설정 및 의존성 설치
 
   - Backend와 Frontend 디렉토리 생성
   - NestJS 프로젝트 초기화 (backend/)
