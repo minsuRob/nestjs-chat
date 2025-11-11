@@ -103,7 +103,7 @@
   - TypeScript 타입 정의
   - _Requirements: 6.1, 6.2, 6.3_
 
-- [ ] 13. Frontend - GuestLogin 컴포넌트 구현
+- [x] 13. Frontend - GuestLogin 컴포넌트 구현
 
   - 닉네임 입력 폼 UI
   - createGuest mutation 호출
