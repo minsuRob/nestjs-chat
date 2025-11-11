@@ -9,7 +9,7 @@
   - Docker Compose 파일 작성 (PostgreSQL, Redis)
   - _Requirements: 6.4, 6.5_
 
-- [ ] 2. Backend - Prisma 및 데이터베이스 설정
+- [x] 2. Backend - Prisma 및 데이터베이스 설정
 
   - Prisma 스키마 파일 작성 (Message 모델)
   - Prisma Client 생성
