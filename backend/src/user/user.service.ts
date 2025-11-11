@@ -2,7 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { RedisService } from '../redis/redis.service';
 import { CreateGuestInput } from './dto/create-guest.input';
 import { GuestUser } from './dto/guest-user.output';
-import { v4 as uuidv4 } from 'uuid';
+import { randomUUID } from 'crypto';
 
 @Injectable()
 export class UserService {
@@ -27,7 +27,7 @@ export class UserService {
     }
 
     // Generate session ID
-    const sessionId = uuidv4();
+    const sessionId = randomUUID();
 
     // Store user in active users set
     await this.redisService.sadd(this.ACTIVE_USERS_KEY, nickname);

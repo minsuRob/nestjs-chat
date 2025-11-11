@@ -17,8 +17,9 @@ import { join } from 'path';
       sortSchema: true,
       playground: true,
       subscriptions: {
-        'graphql-ws': true,
-        'subscriptions-transport-ws': true,
+        'graphql-ws': {
+          path: '/graphql',
+        },
       },
     }),
     PrismaModule,
