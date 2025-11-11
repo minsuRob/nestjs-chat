@@ -33,6 +33,23 @@ export class ChatResolver {
 
   @Subscription(() => Message, {
     name: 'messageAdded',
+    resolve: (payload: {
+      messageAdded: Message & { createdAt: Date | string };
+    }) => {
+      const { createdAt } = payload.messageAdded;
+      const normalizedCreatedAt =
+        createdAt instanceof Date
+          ? createdAt
+          : createdAt
+          ? new Date(createdAt)
+          : createdAt;
+
+      return {
+        ...payload.messageAdded,
+        // Redis serializes dates into strings, so convert back before GraphQL serializes.
+        createdAt: normalizedCreatedAt,
+      };
+    },
   })
   messageAdded() {
     const pubSub = this.redisService.getPubSub();
