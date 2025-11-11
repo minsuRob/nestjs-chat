@@ -33,7 +33,7 @@
   - Subscription transport 설정
   - _Requirements: 6.1, 6.2, 6.3_
 
-- [ ] 5. Backend - User 모듈 구현
+- [x] 5. Backend - User 모듈 구현
 
   - UserModule, UserResolver, UserService 생성
   - CreateGuestInput DTO 작성 (닉네임 검증 2-20자)
