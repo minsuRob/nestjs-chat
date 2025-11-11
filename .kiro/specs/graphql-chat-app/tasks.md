@@ -51,7 +51,7 @@
   - ChatModule에 Prisma 및 Redis 의존성 주입
   - _Requirements: 2.1, 2.4, 6.1, 6.2_
 
-- [ ] 7. Backend - 메시지 전송 기능 구현
+- [x] 7. Backend - 메시지 전송 기능 구현
 
   - sendMessage mutation 구현
   - 메시지 검증 로직 (1-500자)
@@ -60,7 +60,7 @@
   - 에러 핸들링 (저장 실패 시 에러 반환)
   - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 7.1_
 
-- [ ] 8. Backend - 메시지 조회 기능 구현
+- [x] 8. Backend - 메시지 조회 기능 구현
 
   - messages query 구현
   - Prisma를 통한 최근 50개 메시지 조회
@@ -68,7 +68,7 @@
   - limit 파라미터 처리 (기본값 50)
   - _Requirements: 4.1, 4.2, 4.4, 4.5_
 
-- [ ] 9. Backend - 실시간 메시지 Subscription 구현
+- [x] 9. Backend - 실시간 메시지 Subscription 구현
 
   - messageAdded subscription 구현
   - Redis PubSub 구독 설정
@@ -76,7 +76,7 @@
   - WebSocket 연결 관리
   - _Requirements: 3.1, 3.2, 3.5, 6.3_
 
-- [ ] 10. Backend - 에러 핸들링 및 로깅
+- [x] 10. Backend - 에러 핸들링 및 로깅
 
   - GraphQL 에러 포맷팅
   - Validation 에러 처리
@@ -85,7 +85,7 @@
   - 에러 메시지 표준화
   - _Requirements: 7.1, 7.2, 7.3, 7.5_
 
-- [ ] 11. Frontend - Apollo Client 설정
+- [x] 11. Frontend - Apollo Client 설정
 
   - Apollo Client 인스턴스 생성
   - HTTP Link 설정 (Query/Mutation)
