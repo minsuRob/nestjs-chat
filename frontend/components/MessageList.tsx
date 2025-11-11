@@ -20,15 +20,38 @@ export function MessageList({ currentNickname }: MessageListProps) {
     }
   );
 
-  const { data: subscriptionData } = useSubscription<{
-    messageAdded: Message;
-  }>(MESSAGE_ADDED);
+  useSubscription<{ messageAdded: Message }>(MESSAGE_ADDED, {
+    onData: ({ client, data: subscriptionData }) => {
+      if (subscriptionData.data?.messageAdded) {
+        const newMessage = subscriptionData.data.messageAdded;
+
+        // Update cache with new message
+        client.cache.updateQuery<{ messages: Message[] }>(
+          { query: GET_MESSAGES, variables: { limit: 50 } },
+          (existingData) => {
+            if (!existingData) return { messages: [newMessage] };
+
+            // Check if message already exists to avoid duplicates
+            const messageExists = existingData.messages.some(
+              (msg) => msg.id === newMessage.id
+            );
+
+            if (messageExists) return existingData;
+
+            return {
+              messages: [...existingData.messages, newMessage],
+            };
+          }
+        );
+      }
+    },
+  });
 
   const messages = data?.messages || [];
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages, subscriptionData]);
+  }, [messages]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
